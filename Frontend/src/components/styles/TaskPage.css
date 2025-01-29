@@ -1,0 +1,152 @@
+ .task-manager {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ddd;  
+  border-radius: 4px;  
+  background-color: #f9f9f9; 
+}
+ 
+.title {
+  font-size: 1.4rem;  
+  font-weight: 500;  
+  margin-bottom: 15px;  
+  text-align: center;
+  color: #444;  
+}
+ 
+.input-container {
+  display: flex;
+  align-items: center;
+  gap: 8px;  
+  margin-bottom: 12px;
+}
+ 
+.input {
+  flex: 1;
+  padding: 8px;  
+  font-size: 0.95rem;  
+  border: 1px solid #ccc;  
+  border-radius: 3px;  
+  background-color: #fff;
+  color: #333;
+  outline: none;
+  transition: border-color 0.2s ease;
+}
+
+.input:focus {
+  border-color: #999;  
+}
+ 
+.button {
+  padding: 8px 12px;  
+  font-size: 0.95rem;  
+  border: 1px solid #ccc;
+  border-radius: 3px;  
+  background-color: #f4f4f4;  
+  color: #333;
+  cursor: pointer;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.button-add,
+.button-update {
+  border: 1px solid #888;  
+  background-color: #fff;
+  color: #444;  
+}
+
+.button:hover {
+  background-color: #f0f0f0;  
+  color: #111;  
+}
+ 
+.error {
+  color: #e74c3c;  
+  font-size: 0.85rem;  
+  margin-bottom: 12px;  
+  text-align: center;
+}
+ 
+.tasks {
+  margin-top: 20px;
+}
+
+.tasks-title {
+  font-size: 1.1rem;  
+  font-weight: 500;
+  margin-bottom: 8px;
+  color: #333;
+  text-align: left;
+}
+
+.no-tasks {
+  color: #777;
+  font-size: 0.9rem;  
+  font-style: italic;
+  text-align: center;
+}
+ 
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 0;  
+  border-bottom: 1px solid #ddd;
+}
+
+.item:last-child {
+  border-bottom: none;
+}
+ 
+.item-label {
+  display: flex;
+  align-items: center;
+  gap: 8px;  
+  flex: 1;
+}
+ 
+.checkbox {
+  width: 14px; 
+  height: 14px;
+  cursor: pointer;
+}
+ 
+.item-title {
+  font-size: 0.95rem;  
+  font-weight: normal;
+  color: #333;
+}
+
+.completed-task {
+  text-decoration: line-through;
+  color: #888;  
+}
+ 
+.action-buttons {
+  display: flex;
+}
+
+.button-edit,
+.button-delete {
+  border: none;
+  background: none;
+  color: #444;  
+  font-size: 0.95rem;  
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.button-edit:hover {
+  color: #333; 
+}
+
+.button-delete:hover {
+  color: #e74c3c;  
+}
